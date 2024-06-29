@@ -75,7 +75,7 @@ img{
 }
 
 /* BTN */
-.btn{
+.btn-custom{
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
@@ -229,17 +229,26 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh; 
-}
+    justify-content: center; 
+    align-items: center; 
 .form-group{
     margin-top: 50px;
-    padding-top: 30px ;
+    padding-top: 0px ;
     font-family: var(--font-base);
     font-style: normal;
     color: var(--c-fw);
     font-size: 50px;
-}
-.form-control{
 
+}
+.form-group label {
+    text-align: center; 
+    display: block; 
+
+}
+.input-group {
+    width: 300px; 
+    margin: 0 auto;
+    
 }
 
 
@@ -250,7 +259,8 @@ h5 {
     text-transform: uppercase;
     border-radius: 0 ;
     padding: 15px 24px ;
-    margin-top: 30px;
+    margin: 20px;
+    border-radius: 6px;
 }
 
 .btn-brand{
@@ -280,8 +290,3 @@ h5 {
 }
 
 /*SELECTED SECTION*/
-
-#selected-section {
-
-}
-
