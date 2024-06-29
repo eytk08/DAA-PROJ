@@ -231,6 +231,7 @@ h5 {
     min-height: 100vh; 
     justify-content: center; 
     align-items: center; 
+}
 .form-group{
     margin-top: 50px;
     padding-top: 0px ;
@@ -249,6 +250,12 @@ h5 {
     width: 300px; 
     margin: 0 auto;
     
+}
+.buttonselect {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+
 }
 
 
@@ -278,6 +285,7 @@ h5 {
 .breadcrumb{
     background-color: var(--c-fw);
     margin-bottom: 0px;
+    margin-left: auto;
     display: flex;
     flex-wrap: wrap; 
     padding: 8px 15px; 
@@ -287,6 +295,9 @@ h5 {
 
 .breadcrumb-item{
     color: #f1e423;
+    margin-right: 5px; 
+    list-style: none; 
+    
 }
 
 /*SELECTED SECTION*/
