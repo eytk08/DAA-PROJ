@@ -228,7 +228,7 @@ h5 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; 
+    min-height: 100vh; 
 }
 .form-group{
     margin-top: 50px;
@@ -282,7 +282,6 @@ h5 {
 /*SELECTED SECTION*/
 
 #selected-section {
-    margin-top: 200px;
-    margin-right: 300px;
+
 }
 
