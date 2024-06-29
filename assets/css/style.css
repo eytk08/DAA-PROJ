@@ -75,7 +75,7 @@ img{
 }
 
 /* BTN */
-.btn-custom{
+.btn{
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
@@ -357,3 +357,9 @@ h6 {
 }
 
 
+.unselectable {
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
