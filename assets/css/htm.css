@@ -75,115 +75,90 @@ img{
 }
 
 /* BTN */
-.btn{
+.btn-custom{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
     text-transform: uppercase;
     border-radius: 0 ;
     padding: 15px 24px ;
+    margin-top: 30px;
 }
 
 .btn-brand{
     background-color: var(--c-brand);
     color: var(--c-fw) ;
-    border-radius: 20px;
 }
 
 .btn-brand:hover{
-    background-color: var(--c-brand-second);
-    color: var(--c-body);
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: var(--c-fw);
+
 }
 
 /*Land*/
 #land {
-    background: url('../images/Group 22.png') no-repeat center center/cover;
+    background: url('../images/Group 18.png') no-repeat center center/cover;
     height: 100vh;
-}
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-    top: 0;
-}
-
-.img-fluid {
-    max-width: 30%; 
-    height: auto; 
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 0;
-    text-align: center;
-    color: var(--c-fw);
+    margin-bottom: 0; 
+    text-align: center; 
+    margin-top: 0; 
+}
+  
+h6 {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    text-align: center; 
 }
 
-h6 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+.logopage {
+    width: 40%;
+    height: auto;
+    margin: 0 auto; 
 }
 
 .crave {
-    font-size: 5em;
-    background-image: -webkit-linear-gradient(0deg, #b32435 3%, #D23140 15%, #af1729 30%);
+    font-size: 5em; 
+    background-image: -webkit-linear-gradient(0deg, #af1729 3%, #D23140 15%, #af1729 30%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
 .satisfy {
-    font-size: 5em;
+    font-size: 2em; 
     background-image: -webkit-linear-gradient(0deg, #f1e423 4%, #EBD014 15%, #f1e423 74%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    margin-bottom: 10px;
 }
 
 .eat, .spend {
-    text-align: center;
+    text-align: center; 
+    margin-top: 20px; 
 }
+
 
 @media (max-width: 768px) {
-    .img-fluid {
-        max-width: 60%;
-        height: auto;
-        padding-top: 20px;
+    .logopage {
+        width: 70%; 
     }
 
-    h1 {
-        font-size: 25px; 
+    .crave {
+        font-size: 3em; 
     }
 
-    h6 {
-        font-size: 14px;
-    }
-
-    .crave,
-    .satisfy {
-        font-size: 2.5em; 
-    }
-    .btn{
-        font-weight: 500;
-        font-size: 12px;
-        text-transform: uppercase;
-        border-radius: 0 ;
-        padding: 15px 24px ;
-        margin-top: 30px;
-    }
-    
-    .btn-brand{
-        background-color: var(--c-brand);
-        color: var(--c-fw) ;
-        border-radius: 20px;
-    }
-    
-    .btn-brand:hover{
-        background-color: var(--c-brand-second);
-        color: var(--c-body);
+    #land {
+        background: url('../images/Group 18.png') no-repeat center center/cover;
+        height: 60%; 
     }
 }
+
+
 
 /*MENU*/
 #food-menu {
@@ -308,15 +283,30 @@ h6 {
 .buttonselect button {
     flex: 1 1 auto; 
     max-width: 200px; 
-    font-size: 20px;
 }
 
-@media (max-width: 768px) {
-    .buttonselect button {
-        flex: 1 1 auto; 
-        max-width: 200px; 
-        font-size: 14px;
-    }
+
+/*BUTTONS*/
+.btn{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0 ;
+    padding: 15px 24px ;
+    margin: 20px;
+    border-radius: 6px;
+}
+
+.btn-brand{
+    background-color: var(--c-brand);
+    color: var(--c-fw) ;
+}
+
+.btn-brand:hover{
+    background-color: var(--c-brand-second);
+    border-color: var(--c-brand-light);
+    color: var(--c-body);
+
 }
 
 .breadcrumb{
@@ -326,6 +316,8 @@ h6 {
     display: flex;
     flex-wrap: wrap; 
     padding: 8px 15px; 
+
+
 }
 
 .breadcrumb-item{
@@ -366,9 +358,3 @@ h6 {
 }
 
 
-.unselectable {
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none; 
-}
