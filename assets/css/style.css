@@ -268,12 +268,21 @@ h5 {
 .breadcrumb{
     background-color: var(--c-fw);
     margin-bottom: 0px;
-    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 8px 15px; 
 
 
 }
 
 .breadcrumb-item{
     color: #f1e423;
+}
+
+/*SELECTED SECTION*/
+
+#selected-section {
+    margin-top: 200px;
+    margin-right: 300px;
 }
 
