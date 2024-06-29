@@ -135,7 +135,7 @@ h6 {
 
 .satisfy {
     font-size: 5em;
-    background-image: -webkit-linear-gradient(0deg, #f1e423 4%, #EBD014 15%, #f1e423 74%);
+    background-image: -webkit-linear-gradient(0deg, #fffc48 8%, #ebcd0c 40%, #fff350 74%, #ebcd0c 90% );
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -151,7 +151,10 @@ h6 {
         height: auto;
         padding-top: 20px;
     }
-
+    #land {
+        background: url('../images/Group 22.png') no-repeat center center/cover;
+        height: 80vh;
+    }
     h1 {
         font-size: 25px; 
     }
