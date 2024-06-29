@@ -1,27 +1,21 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const selectedCategories = new Set();
-
+    const buttons = document.querySelectorAll('.btn.btn-brand');
     const categories = {
         snacks: [
             { id: 'snack1', label: 'Chips' },
-            { id: 'snack2', label: 'Cookies' },
-            { id: 'snack3', label: 'Nuts' }
+            { id: 'snack2', label: 'Cookies' }
         ],
         beverages: [
-            { id: 'bev1', label: 'Coffee' },
-            { id: 'bev2', label: 'Tea' },
-            { id: 'bev3', label: 'Juice' }
+            { id: 'beverage1', label: 'Soda' },
+            { id: 'beverage2', label: 'Juice' }
         ],
         'rice-meals': [
-            { id: 'rice1', label: 'Fried Rice' },
-            { id: 'rice2', label: 'Rice Bowl' },
-            { id: 'rice3', label: 'Sushi' }
+            { id: 'rice1', label: 'Chicken Rice' },
+            { id: 'rice2', label: 'Veg Rice' }
         ]
     };
 
-    const buttons = document.querySelectorAll('.btn.btn-brand');
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             const category = button.id;
@@ -45,8 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedSection = document.getElementById('selected-section');
         selectedSection.innerHTML = '';
         selectedCategories.forEach(category => {
-            const section = document.createElement('div');
-            section.innerHTML = `
+            const sectionWrapper = document.createElement('div');
+            sectionWrapper.classList.add('category-section');
+            sectionWrapper.innerHTML = `
                 <h4>${category.charAt(0).toUpperCase() + category.slice(1)}</h4>
                 ${categories[category].map(item => `
                     <div class="form-check">
@@ -57,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `).join('')}
             `;
-            selectedSection.appendChild(section);
+            selectedSection.appendChild(sectionWrapper);
         });
     }
 });
