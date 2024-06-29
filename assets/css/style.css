@@ -144,46 +144,48 @@ h5 {
 }
 
 /*MENU*/
-#food-menu{
+#food-menu {
     background-image: url('../images/Group 101.png');
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-size: cover;
-   
-}
-.menu-section {
-    background-color:transparent;
-    color: var(--c-fw);
-    padding: 200px 0;
+    padding: 100px 0; /* Adjusted padding for better spacing */
+  }
+  
+  .menu-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #ffffff; /* White text color for better contrast */
     text-align: center;
-}
-
-.menu-title {
-    font-size: 4em;
-    margin-top: 0px;
-    margin-bottom: 60px;
+    padding: 50px 0; /* Reduced padding for better compactness */
+  }
+  
+  .menu-title {
+    font-size: 3em; /* Slightly reduced font size */
+    margin-top: 0;
+    margin-bottom: 40px; /* Reduced margin for tighter spacing */
     font-family: var(--font-base);
-}
-
-.menu-item img {
-    width: 270px;
+  }
+  
+  .menu-item img {
+    width: 100%; /* Responsive image width */
+    max-width: 270px; /* Maximum width for image */
     height: auto;
     border-radius: 10px;
-}
-
-.menu-items {
+  }
+  
+  .menu-items {
     display: flex;
     justify-content: center;
-    gap: 90px;
-}
-
-
-.rm, .sn, .dr {
-    margin-top: 0px;
+    gap: 60px; /* Reduced gap between menu items */
+  }
+  
+  .rm, .sn, .dr {
+    margin-top: 10px; /* Increased top margin for better spacing */
     font-weight: normal;
-    font-size: larger;
-    color: var(--c-fw);
-}
+    font-size: 1.2em; /* Adjusted font size */
+    color: #ffffff; /* White text color */
+  }
+  
 
 
 /*FOOTER*/
