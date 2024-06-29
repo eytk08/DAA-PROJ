@@ -98,49 +98,65 @@ img{
 
 /*Land*/
 #land {
-    background: url('../images/Group 18.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; 
+    background: url('../images/Group 22.png') no-repeat center center/cover;
+    height: 100vh;
 }
+
 h1 {
-    margin-bottom: 0px; 
-    text-align: start;
-    margin-top: 0px;
-  }
-  
-h5 {
-    margin-top: 20px; 
+    font-size: 3em;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 0;
+    color: var(--c-fw);
+}
+
+h6 {
+    font-size: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    text-align: start;
-  }
-
- 
-
-.logopage{
-    width: 40%;
-    height: auto;
+    text-align: center;
 }
-.crave{
-    font-size: 900px;
-    background-image: -webkit-linear-gradient(0deg, #af1729 3%, #D23140 15%, #af1729 30%);
-    background-clip: text; 
-    -webkit-background-clip: text; 
-    -text-fill-color: transparent; 
-    -webkit-text-fill-color: transparent;
-  }
-.satisfy{
+
+.crave {
+    font-size: 5em;
+    background-image: -webkit-linear-gradient(0deg, #b32435 3%, #D23140 15%, #af1729 30%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.satisfy {
+    font-size: 5em;
     background-image: -webkit-linear-gradient(0deg, #f1e423 4%, #EBD014 15%, #f1e423 74%);
-    background-clip: text; 
-    -webkit-background-clip: text; 
-    -text-fill-color: transparent; 
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-.eat{
-    margin-inline-start: 100px;
+.eat, .spend {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .img-fluid {
+        max-width: 60%;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 25px; 
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    .crave,
+    .satisfy {
+        font-size: 2.5em; 
+    }
 }
 
 /*MENU*/
