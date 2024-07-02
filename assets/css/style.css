@@ -389,7 +389,7 @@ h6 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding: 40px;
+    padding: 140px;
 }
 
 .about-section h2 {
@@ -419,6 +419,9 @@ h6 {
 
 
 @media (max-width: 768px) {
+    .about-section {
+        padding: 40px;
+    }
     .col {
         flex: 100%; 
     }
@@ -433,30 +436,34 @@ h6 {
 }
 
 /*algorithm*/
-.algorithm-section{
+.algorithm-section {
     background-image: url('../images/Group 101.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     padding: 40px;
 }
+
 .algorithm-section h2 {
-    font-size: 3em; 
+    font-size: 3em;
     margin-top: 0;
     color: var(--c-fw);
     text-align: center;
 }
-.algorithm-text h3{
+
+.algorithm-text {
+    margin-bottom: 20px;
+}
+
+.algorithm-text h3 {
     font-family: var(--font-primary);
     color: var(--c-fw);
     font-size: medium;
-    text-align: justify;
-
 }
-.algorithm-text p{
+
+.algorithm-text p {
     font-family: var(--font-secondary);
     color: var(--c-fw);
     font-size: medium;
     text-align: justify;
-
 }
