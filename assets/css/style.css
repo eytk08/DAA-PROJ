@@ -313,6 +313,12 @@ h6 {
     max-width: 200px; 
     font-size: 20px;
 }
+.buttonselect button.btn-selected {
+    background-color: var(--c-brand-second); 
+    color: var(--c-dark); 
+}
+
+
 
 @media (max-width: 768px) {
     .buttonselect button {
