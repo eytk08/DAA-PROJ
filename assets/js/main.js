@@ -78,6 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+$(document).ready(function() {
+    const buttons = $('.buttonselect button');
+
+    buttons.click(function() {
+        buttons.removeClass('btn-selected');
+        $(this).addClass('btn-selected');
+    });
+});
 
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
