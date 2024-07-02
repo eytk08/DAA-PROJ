@@ -518,12 +518,21 @@ input[type="radio"] {
     width: 10px; /* Diameter of the inner dot */
     height: 10px; /* Diameter of the inner dot */
     background-color: #dae958; /* Color of the inner dot */
-    border-radius: 50%; /* Ensure it's circular */
+    border-radius: 50%; 
   }
   input[type="radio"]:checked + label {
-    font-weight: bold; /* Example: Make the text bold */
-    color: #dbcb3a; /* Example: Change text color */
-    /* Add any other styles you want to apply to the label */
+    font-weight: bold; 
+    color: #dbcb3a; 
+
   }
   
+  .result {
+    background-image:  url('../images/Group 7.png'); 
+    padding: 20px; 
+    margin-top: 20px; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
   
