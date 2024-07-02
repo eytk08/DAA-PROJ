@@ -14,33 +14,34 @@
 
 </head>
 <body>
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg sticky-top bg-custom">
-        <div class="container">
-          <a class="navbar-brand" href="main.html">
-            <img class="logo2" src="assets\images\Group 8.png" alt="">
-           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="main.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Algorithm</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#works">How it works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#members">Members</a>
-              </li>
-            </ul>
-          </div>
+     <!--NAVBAR-->
+     <nav class="navbar navbar-expand-lg sticky-top bg-custom">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo2" src="assets\images\Group 8.png" alt="">
+         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"onclick="scrollToSection('land')">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu" onclick="scrollToSection('food-menu')">Menu</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#about" onclick="scrollToSection('about')">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#algorithm" onclick="scrollToSection('algorithm')">Algorithm</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+
 
     <!--BREADCRUMB-->
     <nav aria-label="breadcrumb">
@@ -87,11 +88,10 @@
         <div class="container">
           <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2">Algorithm</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="main.html#home" onclick="scrollToSection('land')">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="main.html#menu" onclick="scrollToSection('food-menu')">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="main.html#about" onclick="scrollToSection('about')">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="main.html#algorithm" onclick="scrollToSection('algorithm')">Algorithm</a></li>
             </ul>
             <div  class="footer-logo">
               <img src="assets\images\Group 9.png" alt="footer-logo">
