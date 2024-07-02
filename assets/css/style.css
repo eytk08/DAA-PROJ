@@ -449,6 +449,7 @@ h6 {
     margin-top: 0;
     color: var(--c-fw);
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .algorithm-text {
@@ -467,3 +468,45 @@ h6 {
     font-size: medium;
     text-align: justify;
 }
+
+input[type="radio"] {
+    display: none;
+  }
+  
+  /* Style for the custom radio button */
+  input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; /* Adjust as needed */
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5;
+  }
+  
+  /* Outer circle of the custom radio button */
+  input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Diameter of the outer circle */
+    height: 20px; /* Diameter of the outer circle */
+    border: 3px solid #ffffff; /* Color and thickness of the outer circle */
+    border-radius: 50%; /* Ensure it's circular */
+  }
+  input[type="radio"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px; /* Adjust the position of the inner dot */
+    top: 5px; /* Adjust the position of the inner dot */
+    width: 10px; /* Diameter of the inner dot */
+    height: 10px; /* Diameter of the inner dot */
+    background-color: #dae958; /* Color of the inner dot */
+    border-radius: 50%; /* Ensure it's circular */
+  }
+  input[type="radio"]:checked + label {
+    font-weight: bold; /* Example: Make the text bold */
+    color: #dbcb3a; /* Example: Change text color */
+    /* Add any other styles you want to apply to the label */
+  }
+  
+  
