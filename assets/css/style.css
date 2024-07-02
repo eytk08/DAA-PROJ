@@ -486,6 +486,7 @@ h6 {
     text-align: justify;
 }
 
+/*RADIO BUTTON*/
 input[type="radio"] {
     display: none;
   }
@@ -505,7 +506,7 @@ input[type="radio"] {
     position: absolute;
     left: 0;
     top: 0;
-    width: 20px; /* Diameter of the outer circle */
+    width: 20px; 
     height: 20px; /* Diameter of the outer circle */
     border: 3px solid #ffffff; /* Color and thickness of the outer circle */
     border-radius: 50%; /* Ensure it's circular */
@@ -525,14 +526,44 @@ input[type="radio"] {
     color: #dbcb3a; 
 
   }
-  
+
+/*RESULT PAGE*/
   .result {
     background-image:  url('../images/Group 7.png'); 
-    padding: 20px; 
-    margin-top: 20px; 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: center ;
+    height: fit-content;
+    min-height: 87vh; 
+    position: relative; 
+
 }
+
+.result h2{
+    margin: 0px;
+    padding-top: 20px ;
+    font-family: var(--font-base);
+    font-style: normal;
+    color: var(--c-fw);
+    font-size: 50px;
+
+}
+
+.result-container {
+    position: relative; 
+
+}
+
+.button-container {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    padding: 20px;
+}
+
+.button-container button {
+    margin-left: 10px; 
+}
+
 
   
