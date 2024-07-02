@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     selectedCategories.add(category);
                     button.classList.add('btn-selected');
                 } else {
-                    alert('You can only select two categories.');
+                    alert('You can only select two categories. Click button to unselect.');
                     return;
                 }
             }
@@ -85,7 +85,7 @@ $(document).ready(function() {
         buttons.removeClass('btn-selected');
         $(this).addClass('btn-selected');
     });
-});
+}); 
 
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
