@@ -313,6 +313,8 @@ h6 {
     flex: 1 1 auto; 
     max-width: 200px; 
     font-size: 20px;
+    background-color: var(--c-brand);
+    color: var(--c-fw) ;
 }
 .buttonselect button.btn-selected {
     background-color: var(--c-brand-second); 
@@ -322,11 +324,26 @@ h6 {
 
 
 @media (max-width: 768px) {
+    .buttonselect {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    
+    }
     .buttonselect button {
         flex: 1 1 auto; 
         max-width: 200px; 
         font-size: 14px;
     }
+
+    .form-group label {
+        font-size: 40px;  
+        text-align: center; 
+          display: block;  
+      
+      }
 }
 
 .breadcrumb{
