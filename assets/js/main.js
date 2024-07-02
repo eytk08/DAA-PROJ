@@ -3,16 +3,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.btn.btn-brand');
     const categories = {
         snacks: [
-            { id: 'snack1', label: 'Chips' },
-            { id: 'snack2', label: 'Cookies' }
+            { id: 'snack1', label: 'Streetfood' },
+            { id: 'snack2', label: 'Noodles' },
+            { id: 'snack3', label: 'Western Pasta' },
+            { id: 'snack4', label: 'Pancit' },
+            { id: 'snack5', label: 'Sandwich' },
+            { id: 'snack6', label: 'Sweets' }
         ],
         beverages: [
-            { id: 'beverage1', label: 'Soda' },
-            { id: 'beverage2', label: 'Juice' }
+            { id: 'beverage1', label: 'Coffee-Cold' },
+            { id: 'beverage2', label: 'Coffee-Hot' },
+            { id: 'beverage3', label: 'Juice-Tea' },
+            { id: 'beverage4', label: 'Juice-Lemonade' },
+            { id: 'beverage5', label: 'Juice-Fruit' },
+            { id: 'beverage6', label: 'Milk Tea' },
+            { id: 'beverage7', label: 'Shakes-Fruit' },
+            { id: 'beverage8', label: 'Shakes-Others' },
+            { id: 'beverage9', label: 'Water' }
         ],
         'rice-meals': [
-            { id: 'rice1', label: 'Chicken Rice' },
-            { id: 'rice2', label: 'Veg Rice' }
+            { id: 'rice1', label: 'Pork Fried' },
+            { id: 'rice2', label: 'Pork Steamed' },
+            { id: 'rice3', label: 'Pork Soup' },
+            { id: 'rice4', label: 'Beef Fried' },
+            { id: 'rice5', label: 'Beef Steamed' },
+            { id: 'rice6', label: 'Beef Soup' },
+            { id: 'rice7', label: 'Chicken Fried' },
+            { id: 'rice8', label: 'Chicken Steamed' },
+            { id: 'rice9', label: 'Chicken Soup' },
+            { id: 'rice10', label: 'Vegetables Fried' },
+            { id: 'rice11', label: 'Vegetables Steamed' },
+            { id: 'rice12', label: 'Vegetables Soup' }
         ]
     };
 
