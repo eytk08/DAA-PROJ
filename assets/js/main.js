@@ -77,3 +77,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        const navbarHeight = document.querySelector('.navbar').offsetHeight; // Get navbar height
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY; // Calculate top position relative to the viewport
+        const sectionPosition = sectionTop - navbarHeight; // Adjust for navbar height
+
+        window.scrollTo({
+            top: sectionPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+

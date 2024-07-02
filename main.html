@@ -27,16 +27,16 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#home"onclick="scrollToSection('land')">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about">Algorithm</a>
+                    <a class="nav-link" href="#algorithm" onclick="scrollToSection('algorithm')">Algorithm</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#works">How it works</a>
+                    <a class="nav-link" href="#about" onclick="scrollToSection('about')">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#members">Members</a>
+                    <a class="nav-link" href="#menu" onclick="scrollToSection('food-menu')">Menu</a>
                   </li>
                 </ul>
               </div>
@@ -45,7 +45,6 @@
 
 
         <!--LANDING PAGE-->
-
         <section id="land" class="d-flex justify-content-center">
           <div class="container text-center">
             <div class="row">
@@ -94,7 +93,40 @@
             </div>
           </section>
 
-
+          <!--ABOUT-->
+          <div id="about" class="about-section unselectable">
+            <div class="row">
+              <h2 >About</h2>
+              <div class="col about-image">
+                  <img src="assets/images/Group 23.png" alt="About Us">
+              </div>
+              <div class="col about-text">
+                  <p>
+                      The PUP Lagoon Food Court offers a vibrant selection of delicious and budget-friendly meals to fuel your busy days at Polytechnic University of the Philippines. Whether you're craving Filipino favorites, refreshing snacks, or something in between, our diverse range of vendors caters to every taste and keeps your wallet happy.
+                  </p>
+              </div>
+          </div>
+      </div>
+          <!--Algorithm-->
+          <div id="algorithm"class="algorithm-section unselectable ">
+            <h2>Algorithm</h2>
+            <div class="algorithm-content justify-content-right">
+                <div class="algorithm-text">
+                    <h3>Knapsack Backtracking in Action:</h3>
+                    <p>
+                        Imagine a knapsack (a backpack) with limited space, representing your budget or dietary restrictions. The algorithm treats each food item as an object with a weight (price) and a value (satisfaction). The Kanpsack Backtracking method explores all possible combinations of food items, aiming to fill your knapsack (maximize your satisfaction) while staying within your constraints (budget or restrictions).
+                    </p>
+                    <h3>Constraint Propagation for Optimization:</h3>
+                    <p>
+                        To further optimize the search process, we incorporate Constraint Propagation. This technique identifies and eliminates irrelevant food combinations early on, focusing the search on options that meet your needs. By filtering out unsuitable choices, constraint propagation ensures the algorithm finds the most fitting combinations quickly and efficiently.
+                    </p>
+                    <h3>The Result: A Streamlined Food Selection Experience</h3>
+                    <p>
+                        Thanks to the Knapsack Backtracking algorithm and Constraint Propagation, our website can efficiently present you with a diverse range of food options that align with your preferences and budget. So, browse our menu with confidence, knowing that powerful algorithms are working behind the scenes to deliver a delightful dining experience.
+                    </p>
+                </div>
+            </div>
+        </div>
           <!--FOOTER-->
           <section id="footer" class="foot">
             <div class="container">
@@ -114,7 +146,9 @@
             </div>
           </section>
       
+          <script src="assets\js\main.js">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
