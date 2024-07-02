@@ -363,6 +363,10 @@ h6 {
 }
 
 /*SELECTED SECTION*/
+#selection {
+    position: relative;
+
+}
 #selected-section {
     display: flex;
     flex-wrap: wrap; 
@@ -392,6 +396,31 @@ h6 {
     font-size: 18px;
 }
 
+.button-container1 {
+    position: absolute;
+    bottom: 15px; 
+    right: 10px; 
+    padding: 20px;
+}
+.button-container1 button {
+    margin-left: 10px; 
+}
+.submit-btn {
+        font-weight: 500;
+        font-size: 20px;
+        padding: 15px 24px ;
+        background-color: var(--c-brand);
+        color: var(--c-fw) ;
+        border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+    .button-container {
+        position: relative;
+        margin-top: 20px; 
+        text-align: right; 
+    }
+}
 
 .unselectable {
     -webkit-user-select: none; 
