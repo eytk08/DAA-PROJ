@@ -395,9 +395,12 @@ h6 {
     font-family: var(--font-secondary);
     font-size: 18px;
 }
+.button-container1 {
+    text-align: right;
+}
 
 .button-container1 button {
-    margin-left: 250px; 
+    text-align: right;
     margin-bottom: 20px;
 }
 .submit-btn {
@@ -406,7 +409,7 @@ h6 {
         padding: 15px 24px ;
         background-color: var(--c-brand);
         color: var(--c-fw) ;
-        border-radius: 20px;
+        border-radius: 15px;
 }
 
 .btn-option{
