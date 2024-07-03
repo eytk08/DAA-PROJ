@@ -43,6 +43,7 @@ This project is divided into three sections:
 
 ### Selection Page
 - Allows the user to input a maximum budget and select between categories.
+<img src="assets/images/SELECT_RMF" width="400" />
 
 ### Results Page
 - Displays the generated combinations of food items within the specified budget in a tabular form.
