@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitButton.textContent = 'Submit';
         submitButton.onclick = handleFormSubmission; //form submission
         buttonContainer.appendChild(submitButton);
+
     }
 
     function updateOptions(optionId, category) {
