@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Juice: ['Tea', 'Lemonade', 'Fruit'],
             MilkTea: ['Regular', 'Flavored'],
             Shakes: ['Fruit', 'Others'],
-            Water: ['Regular']
+            Water: []
         },
         snacks: {
             Streetfood: ['Skewers', 'Fried'],
@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div id="${category}-sub-area"></div>
             `;
             selectedSection.appendChild(sectionWrapper);
-    
 
             Object.keys(data[category.replace('-', '_')]).forEach(option => {
                 const button = document.createElement('button');
@@ -64,11 +63,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById(`${category}-area`).appendChild(button);
             });
         });
+
+        // Add the submit button after generating the content
+        addSubmitButton();
+    }
+
+    function addSubmitButton() {
+        const buttonContainer = document.querySelector('.button-container1');
+        buttonContainer.innerHTML = ''; 
+
+        const submitButton = document.createElement('button');
+        submitButton.classList.add('submit-btn');
+        submitButton.textContent = 'Submit';
+        submitButton.onclick = handleFormSubmission; //form submission
+        buttonContainer.appendChild(submitButton);
     }
 
     function updateOptions(optionId, category) {
         const subcategoryArea = document.getElementById(`${category}-sub-area`);
-        subcategoryArea.innerHTML = ''; 
+        subcategoryArea.innerHTML = '';
         const selectedOption = optionId.split('-')[1];
         if (data[category][selectedOption]) {
             data[category][selectedOption].forEach(subOption => {
@@ -79,8 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-});
 
+    function handleFormSubmission() {
+        // Add your form submission logic here
+        console.log('Form submitted!');
+    }
+});
 
 $(document).ready(function() {
     const buttons = $('.buttonselect button');
@@ -105,10 +122,9 @@ $(document).ready(function() {
         }
     }
 
-    // Example usage:
     $('.scroll-to-section').click(function(e) {
         e.preventDefault();
-        const sectionId = $(this).attr('href').substr(1); // Get section ID from href
+        const sectionId = $(this).attr('href').substr(1); 
         scrollToSection(sectionId);
     });
 });
