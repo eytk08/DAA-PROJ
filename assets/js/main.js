@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
         beverages: {
             Coffee: ['Hot', 'Iced'],
             Juice: ['Tea', 'Lemonade', 'Fruit'],
-            MilkTea: ['Regular', 'Flavored'],
+            MilkTea: [],
             Shakes: ['Fruit', 'Others'],
             Water: []
         },
         snacks: {
-            Streetfood: ['Skewers', 'Fried'],
+            Streetfood: [],
             Pasta: ['Noodles', 'Western Pasta', 'Pancit'],
             Bread: ['Sandwich', 'Sweets']
         }
