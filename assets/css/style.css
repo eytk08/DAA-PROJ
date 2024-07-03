@@ -435,13 +435,13 @@ h6 {
     color: var(--c-dark);
 
 }
-.btn-option.btn-selected{
+.btn-c-selected{
     background-color: var(--c-brand) ;
-    color: var(--c-dark);
+    color: var(--c-fw);
 }
-.btn-sub-option.btn-selected{
+.btn-sub-selected{
     background-color: var(--c-brand-second) ;
-    border-color: var(--c-dark);
+    color: var(--c-dark);
 
 }
 #category-area {
