@@ -414,6 +414,49 @@ h6 {
         border-radius: 20px;
 }
 
+.btn-option{
+    color: var(--c-fw);
+    background-color: var(--c-dark);
+    border-radius: 10px;
+    margin: 5px;
+}
+.btn-sub-option {
+    color: var(--c-fw);
+    border-radius: 10px;
+    background-color: var(--c-body);
+    margin: 5px;
+    margin-top: 10px;
+
+}
+.btn-option:hover{
+    background-color: var(--c-brand) ;
+    border-color: var(--c-dark);
+}
+.btn-sub-option:hover {
+    background-color: var(--c-brand-second) ;
+    color: var(--c-dark);
+
+}
+.btn-option.btn-selected{
+    background-color: var(--c-brand) ;
+    color: var(--c-dark);
+}
+.btn-sub-option.btn-selected{
+    background-color: var(--c-brand-second) ;
+    border-color: var(--c-dark);
+
+}
+#category-area {
+    background-color: var(--c-brand-light);
+}
+#category-sub-area {
+    margin-top: 10px; 
+}
+
+.subcategory-section {
+    background-color: var(--c-brand-second);
+}
+
 @media (max-width: 767px) {
     .button-container {
         position: relative;
