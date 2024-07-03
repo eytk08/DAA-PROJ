@@ -37,6 +37,9 @@ This project is divided into three sections:
 
 ### Landing Page
 - Overview and introduction to the food combination generator.
+  <p align="center;">
+<img src="assets/images/HOME_RMF" width="400" />
+ </p>
 
 ### Selection Page
 - Allows the user to input a maximum budget and select between categories.
