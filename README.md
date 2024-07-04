@@ -11,6 +11,42 @@ This project is a food combination generator that uses backtracking to generate 
 - The algorithm uses backtracking to generate combinations within the budget.
 - Combinations are presented in a tabular form.
   
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [How It Works](#how-it-works)
+5. [Folder Structure](#folder-structure)
+6. [Technologies Used](#technologies-used)
+7. [Development](#development)
+   1. [Project Setup and Version Control](#project-setup-and-version-control)
+   2. [Front-End Development](#front-end-development)
+   3. [Development Tools and Practices](#development-tools-and-practices)
+8. [Pages](#pages)
+   1. [Landing Page](#landing-page)
+   2. [Selection Page](#selection-page)
+      1. [Categories and Options](#categories-and-options)
+         - [Beverages](#beverages)
+         - [Rice Meals](#rice-meals)
+         - [Snacks](#snacks)
+   3. [Results Page](#results-page)
+9. [Authors and Acknowledgement](#authors-and-acknowledgement)
+10. [Contact](#contact)
+
+## Installation 
+### Prerequisites
+- A web browser 
+- [Git](https://git-scm.com/) installed on your local machine
+
+### Steps
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/cravings-satisfied-frontend.git
+2. **Navigate to the Project Directory**:
+   cd cravings-satisfied-frontend
+3. **Open the Project in Your Preferred Text Editor**
+4. **Open main.html in Your Web Browser**
+  
 ## How It Works
 
 1. **Landing Page**: 
@@ -122,7 +158,6 @@ This project is divided into three pages:
 
 ### Results Page
 - Displays the generated combinations of food items within the specified budget in a tabular form.
-
 
 ## Authors and Acknowledgement
 - **Frontend**:
